@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <style>
+
+  </style>
+  <title>Travel Agency</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand ml-5 logo" href="#">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-sun" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z" />
+        <path fill-rule="evenodd"
+          d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
+      </svg>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link onWeekButton btn-outline-warning" href="#">Deal of the Week</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link onSummerButton btn-outline-warning" href="#">Welcome Summer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link onDayButton btn-outline-warning" href="#">Deal of the Day</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron jumbotron-fluid welcome-jumboltron mb-2">
+    <div class="container">
+      <h1 class="display-4">Welcome to Our Tour Company</h1>
+      <p class="lead">With a world full of fascinating destinations, choosing the perfect vacation spot can present a
+        challenge. That is why we are here to help you choose! </p>
+    </div>
+    <section class="p-5">
+      <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wns.com%2FPortals%2F0%2FImages%2FHeaderBanner%2Fdesktop%2F1087%2F53%2Ftravel_HD.jpg&f=1&nofb=1  "
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>We plan…You pack.</h5>
+              <p>Travel over 15 destinations all over the world and find great offers everyday!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.smartertravel.com/uploads/2018/12/shutterstock_601341215-tnshutter.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>We plan…You pack.</h5>
+              <p>Travel over 15 destinations all over the world and find great offers everyday!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.lancashare.co.uk/media/rqeyvD5k "
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>We plan…You pack.</h5>
+              <p>Travel over 15 destinations all over the world and find great offers everyday!</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <button type="button" class="btn btn-outline-warning btn-block mt-5">Book with us here!</button>
+    </section>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid d-none deal-week-jumboltron">
+    <div class="container">
+      <h1 class="display-4">Deal of the Week</h1>
+      <p class="lead">Here you can find our deals of the week at the best price! </p>
+    </div>
+
+  </div>
+
+  <div class="jumbotron jumbotron-fluid d-none deal-summer-jumboltron">
+    <div class="container">
+      <h1 class="display-4">Summer Deals </h1>
+      <p class="lead">Summer is one of the most beautiful seasons of the year. Find the most popular summer destinations
+        below! </p>
+    </div>
+
+  </div>
+
+  <div class="jumbotron jumbotron-fluid d-none deal-day-jumboltron">
+    <div class="container">
+      <h1 class="display-4"> Today's Deal<h1></h1>
+      <p class="lead">Every day you can find new deals!</p>
+    </div>
+
+  </div>
+
+
+
+
+  <section class="deal-week row container-fluid d-none">
+
+    <div class="col-6 col-md-4 col-lg-3 ">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/c5a8f6d/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/gettyimages-532590277_2ZNe4ra.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+          <p class="card-text">The City of Light draws millions of visitors every year with its unforgettable ambiance.
+            Of course, the divine cuisine and vast art collections deserve some of the credit as well.
+          <div class="accordion" id="accordionExample">
+
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                read more ...
+              </button>
+            </h2>
+
+
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                The gentle River
+                Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of
+                Rococo-
+                and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps.
+                Peppering
+                the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to
+                the
+                market, cafe or cinema.
+                content.
+              </div>
+
+            </div>
+          </div>
+          </p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3  ">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/0e6734a/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/482151882_HjS9rWb.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">London</h5>
+          <p class="card-text">London is a world unto itself that can keep you occupied for days. If it's your first time in London, 
+            save time for a visit to the Tower of London,
+            Tate Modern, Buckingham Palace or the British Museum before sitting down to a classic afternoon tea. 
+          <div class="accordion" id="accordionExample">
+
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                read more ...
+              </button>
+            </h2>
+
+
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                The gentle River
+                Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of
+                Rococo-
+                and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps.
+                Peppering
+                the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to
+                the
+                market, cafe or cinema.
+                content.
+              </div>
+
+            </div>
+          </div>
+          </p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3  ">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/981979e/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/main_image_cropped_rome_445x280_f0qQD4i.jpg"
+          class="card-img-top" alt="Rome">
+        <div class="card-body">
+          <h5 class="card-title">Rome</h5>
+          <p class="card-text">When you visit the Eternal City, prepare to cross a few must-see attractions – including the Colosseum, 
+            the Trevi Fountain and the Pantheon – off of your bucket list. Additional treasures, such as St. Peter's Basilica and the Sistine Chapel,
+             can be found in nearby Vatican City.
+          <div class="accordion" id="accordionExample">
+
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                read more ...
+              </button>
+            </h2>
+
+
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                The gentle River
+                Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of
+                Rococo-
+                and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps.
+                Peppering
+                the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to
+                the
+                market, cafe or cinema.
+                content.
+              </div>
+
+            </div>
+          </div>
+          </p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 ">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/1894bcf/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/gett1_445x280_S9ZiJnK.jpg"
+          class="card-img-top" alt="Barcelona">
+        <div class="card-body">
+          <h5 class="card-title">Barcelona</h5>
+          <p class="card-text">This Spanish city is a feast for the eyes: Visitors can walk past medieval architecture in the Barri Gòtic, 
+            snap photos of the intricate Sagrada Família and marvel at Gaudí's whimsical creations in Park Güell. 
+          <div class="accordion" id="accordionExample">
+
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                read more ...
+              </button>
+            </h2>
+
+
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                The gentle River
+                Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of
+                Rococo-
+                and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps.
+                Peppering
+                the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to
+                the
+                market, cafe or cinema.
+                content.
+              </div>
+
+            </div>
+          </div>
+          </p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="deal-summer row container-fluid d-none ">
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/4d06a60/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/183346577_JrseKsM.jpg"
+          class=" card-img-top" alt="Dubai">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+          <p class="card-text">Stunning Persian Gulf views, heart-pumping activities and historical landmarks await you in Dubai.
+          </p>
+          <a href="#" class="btn btn-warning">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/5a2511b/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/gettyimages-462922955_BDSjPTe.jpg"
+          class=" card-img-top" alt="Santorini">
+        <div class="card-body">
+          <h5 class="card-title">Santorini</h5>
+          <p class="card-text">Frequently touted as a top honeymoon destination, this Greek isle woos every year with its breathtaking sunsets and colorful beaches.</p>
+          <a href="#" class="btn btn-warning">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img 
+          src="https://travel.usnews.com/dims4/USNEWS/5938172/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/main_image_cropped_st_lucia_445x280_gs0XznL.jpg"
+          class=" card-img-top" alt="St. Lucia">
+        <div class="card-body">
+          <h5 class="card-title">St. Lucia</h5>
+          <p class="card-text">Dotted with luxurious boutique hotels, this Caribbean destination is tailor-made for lovebirds and adrenaline junkies.</p>
+          <a href="#" class="btn btn-warning">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/2eabcc0/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/aquatic_life_main_445x280_RQs4BXN.jpg"
+          class=" card-img-top" alt="Great Barrier Reef">
+        <div class="card-body">
+          <h5 class="card-title">Great Barrier Reef</h5>
+          <p class="card-text">The globe's largest coral reef system and one of the original Seven Natural Wonders of the World. Touts incredible scenery, whether you view it underwater, from the air or by boat.</p>
+          <a href="#" class="btn btn-warning">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/e823d5f/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/main1_445x280_N3c09vD.jpg"
+          class=" card-img-top" alt="Rio de Janeiro">
+        <div class="card-body">
+          <h5 class="card-title">Rio de Janeiro</h5>
+          <p class="card-text">Christ the Redeemer and the shores of Copacabana and Ipanema beaches are only some reasons why you should plan a trip to Rio. </p>
+          <a href="#" class="btn btn-warning">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img
+          src="https://travel.usnews.com/dims4/USNEWS/e929997/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/niagara_falls_getty_main_resized_445x280_YGLqknI.jpg"
+          class=" card-img-top" alt="Niagara Falls">
+        <div class="card-body">
+          <h5 class="card-title">Niagara Falls</h5>
+          <p class="card-text">A spectacular cluster of three waterfalls, Niagara Falls is a must-see if you want a glimpse of some of North America's best sites. </p>
+          <a href="#" class="btn btn-warning">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="deal-day row container-fluid d-none ">
+    <div class="col-8"><img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i544d42cfba586417/version/1580913087/colmar-france-european-best-destination-2020.jpg"
+        class="img-fluid" alt="Responsive image"></div>
+    <div class="col-4 container p-5">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          BEST DEAL OF THE DAY
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">The capital of the Alsace wine region, Colmar looks for all the world as though it has been plucked from the pages of a medieval folk tale.</li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Hotels
+            <span class="badge badge-warning badge-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Flights
+            <span class="badge badge-primary badge-pill">2</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer font-small bg-light text-dark pt-4 mt-5">
+    <div class="container">
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <li class="list-inline-item">
+        <button type="button"  class="btn btn-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Contact Us<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+        </svg></button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+               You can email us at touragency@gmail.com or call us at +43 4535 435  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </li>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a> Atlantic Tour</a>
+    </div>
+  </footer>
+
+  <script>
+    const dealWeekSection = document.querySelector('.deal-week')
+    const dealSummerSection = document.querySelector('.deal-summer')
+    const dealDaySection = document.querySelector('.deal-day')
+    const logo = document.querySelector('.logo')
+    const onWeekButton = document.querySelector('.onWeekButton')
+    const onSummerButton = document.querySelector('.onSummerButton')
+    const onDayButton = document.querySelector('.onDayButton')
+    const welcomeJum = document.querySelector('.welcome-jumboltron')
+    const weekJum = document.querySelector('.deal-week-jumboltron')
+    const DayJum = document.querySelector('.deal-day-jumboltron')
+    const SummerJum = document.querySelector('.deal-summer-jumboltron')
+    const travelNum = document.querySelectorAll(".card")
+ 
+    console.log("Number of travel on our website is " + travelNum.length)
+
+    logo.onclick = () => {
+      location.reload();
+    }
+    onWeekButton.onclick = () => {
+      welcomeJum.classList.add('d-none')
+      DayJum.classList.add('d-none')
+      SummerJum.classList.add('d-none')
+
+      dealSummerSection.classList.add('d-none')
+      dealDaySection.classList.add('d-none')
+
+      dealWeekSection.classList.remove('d-none')
+      weekJum.classList.remove('d-none')
+    }
+
+    onSummerButton.onclick = () => {
+      welcomeJum.classList.add('d-none')
+      DayJum.classList.add('d-none')
+      weekJum.classList.add('d-none')
+
+      dealWeekSection.classList.add('d-none')
+      dealDaySection.classList.add('d-none')
+      SummerJum.classList.remove('d-none')
+      dealSummerSection.classList.remove('d-none')
+    }
+
+    onDayButton.onclick = () => {
+      welcomeJum.classList.add('d-none')
+      SummerJum.classList.add('d-none')
+      weekJum.classList.add('d-none')
+      DayJum.classList.remove('d-none')
+      dealWeekSection.classList.add('d-none')
+      dealSummerSection.classList.add('d-none')
+      dealDaySection.classList.remove('d-none')
+
+    }
+
+
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
